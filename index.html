@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cours PHP - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="print-btn no-print" onclick="window.print()">🖨️ Imprimer / PDF</button>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="topbar">
+                <div>
+                    <h1>📘 Cours PHP Complet</h1>
+                    <p style="margin:6px 0 0 0; color:var(--muted)">
+                        Bienvenue dans ton parcours d’apprentissage PHP — pas à pas jusqu’à la création d’une
+                        <strong>barre de recherche de villes françaises</strong>.
+                    </p>
+                </div>
+
+                <div class="theme-switch no-print" aria-hidden="false">
+                    <label for="themeToggle" style="font-size:0.95rem; color:var(--muted); margin-right:8px;">Thème</label>
+                    <div id="themeToggle" class="toggle" role="button" tabindex="0" aria-pressed="false" title="Basculer thème">
+                        <div class="icons" aria-hidden="true">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="knob" aria-hidden="true">🌞</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overview">
+                <strong>🎯 Objectif :</strong> apprendre PHP depuis zéro à travers des exemples concrets,
+                jusqu’à la création d’une mini-application web : <em>French City Search</em>.
+            </div>
+
+            <h2>📚 Sommaire du cours</h2>
+            <div class="toc">
+                <a href="01-intro.php">1️⃣ Introduction à PHP</a>
+                <a href="02-variables.php">2️⃣ Variables & Types</a>
+                <a href="03-conditions-boucles.php">3️⃣ Conditions, Boucles et Fonctions</a>
+                <a href="04-formulaires.php">4️⃣ Formulaires et Sécurité</a>
+                <a href="05-bdd-pdo.php">5️⃣ Connexion à une base de données (PDO)</a>
+                <a href="06-mini-projet.php">6️⃣ Mini-Projet : SearchBar de villes</a>
+                <a href="07-explication.php">7️⃣ Explication complète du projet</a>
+            </div>
+
+            <p style="margin-top:18px; color:var(--muted)">
+                💡 Conseil : suis les chapitres dans l’ordre. Chaque page introduit un concept essentiel pour construire ton projet final.
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

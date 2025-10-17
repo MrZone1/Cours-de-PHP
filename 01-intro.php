@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>1. Introduction à PHP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="print-btn no-print" onclick="window.print()">🖨️ Imprimer / PDF</button>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="topbar">
+                <div>
+                    <h1>1️⃣ Introduction à PHP</h1>
+                    <p style="margin:6px 0 0 0; color:var(--muted)">Découvre ce qu’est PHP et exécute ton premier code dynamique.</p>
+                </div>
+
+                <div class="theme-switch no-print">
+                    <label for="themeToggle" style="font-size:0.95rem; color:var(--muted); margin-right:8px;">Thème</label>
+                    <div id="themeToggle" class="toggle" role="button" tabindex="0" aria-pressed="false">
+                        <div class="icons">
+                            <span></span><span></span>
+                        </div>
+                        <div class="knob">🌞</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overview">
+                <strong>PHP</strong> (PHP: Hypertext Preprocessor) est un langage de programmation côté serveur.
+                Il permet de générer du contenu dynamique (HTML, JSON, etc.) avant que la page soit envoyée au navigateur.
+            </div>
+
+            <h2>📘 Qu’est-ce qu’un langage “côté serveur” ?</h2>
+            <p>Contrairement au JavaScript qui s’exécute dans ton navigateur, PHP s’exécute sur un serveur web
+            (comme Apache ou Nginx). Ce serveur renvoie au navigateur le résultat final, jamais le code source PHP lui-même.</p>
+
+            <h3>🔧 Exemple simple</h3>
+            <pre><code>&lt;?php
+echo "Bonjour Monde !";
+?&gt;
+</code></pre>
+
+            <p>Ce code ne s’affichera correctement que si tu le lances dans un environnement serveur (comme XAMPP, WAMP, MAMP ou Docker).</p>
+
+            <h3>🧠 Explication</h3>
+            <ul>
+                <li><code>&lt;?php</code> ouvre une section PHP.</li>
+                <li><code>echo</code> affiche du texte dans la page.</li>
+                <li><code>?&gt;</code> ferme la balise PHP.</li>
+            </ul>
+
+            <h3>⚙️ Tester ton code</h3>
+            <p>Installe un serveur local (par exemple <strong>XAMPP</strong>) puis place ton fichier dans le dossier <code>htdocs</code>.<br>
+            Ouvre ensuite ton navigateur et tape : <code>http://localhost/01-intro.php</code></p>
+
+            <h3>💡 Exemple un peu plus avancé</h3>
+            <p>PHP peut mélanger du HTML et du code dynamique :</p>
+
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;h1&gt;Bonjour&lt;/h1&gt;
+&lt;p&gt;Aujourd’hui, nous sommes le &lt;?php echo date('d/m/Y'); ?&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+            <p>Ici, la fonction <code>date()</code> génère automatiquement la date du jour.</p>
+
+            <h3>✅ À retenir</h3>
+            <ul>
+                <li>PHP est interprété par le serveur avant d’être envoyé au navigateur.</li>
+                <li>Tu peux combiner HTML et PHP dans un même fichier.</li>
+                <li>La commande <code>echo</code> sert à afficher du texte ou des variables.</li>
+            </ul>
+
+            <div class="overview">
+                Prochaine étape → apprendre à manipuler les <strong>variables et types</strong> en PHP.
+            </div>
+
+            <p><a href="index.html">⬅️ Retour à l’accueil</a> | <a href="02-variables.php">Étape suivante : Variables & Types ➡️</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

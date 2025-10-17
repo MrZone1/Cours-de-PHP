@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2. Variables et Types en PHP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="print-btn no-print" onclick="window.print()">🖨️ Imprimer / PDF</button>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="topbar">
+                <div>
+                    <h1>2️⃣ Variables et Types</h1>
+                    <p style="margin:6px 0 0 0; color:var(--muted)">Découvre comment stocker et manipuler des données en PHP.</p>
+                </div>
+
+                <div class="theme-switch no-print">
+                    <label for="themeToggle" style="font-size:0.95rem; color:var(--muted); margin-right:8px;">Thème</label>
+                    <div id="themeToggle" class="toggle" role="button" tabindex="0" aria-pressed="false">
+                        <div class="icons"><span></span><span></span></div>
+                        <div class="knob">🌞</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="overview">
+                Une <strong>variable</strong> est une boîte qui contient une donnée.
+                En PHP, toutes les variables commencent par le symbole <code>$</code>.
+            </div>
+
+            <h3>📘 Exemple</h3>
+            <pre><code>&lt;?php
+$nom = "Alice";
+$age = 25;
+$prix = 12.5;
+$estAdmin = true;
+?&gt;
+
+&lt;p&gt;Nom : &lt;?php echo $nom; ?&gt;&lt;/p&gt;
+&lt;p&gt;Âge : &lt;?php echo $age; ?&gt; ans&lt;/p&gt;
+&lt;p&gt;Prix : &lt;?php echo $prix; ?&gt; €&lt;/p&gt;
+&lt;p&gt;Admin ? &lt;?php echo $estAdmin ? "Oui" : "Non"; ?&gt;&lt;/p&gt;
+</code></pre>
+
+            <h3>🧠 Types courants</h3>
+            <ul>
+                <li><code>string</code> : texte</li>
+                <li><code>int</code> : nombre entier</li>
+                <li><code>float</code> : nombre à virgule</li>
+                <li><code>bool</code> : vrai/faux</li>
+                <li><code>array</code> : tableau</li>
+                <li><code>object</code> : objet</li>
+            </ul>
+
+            <h3>📦 Exemple de tableau</h3>
+            <pre><code>&lt;?php
+$fruits = ["pomme", "banane", "fraise"];
+echo $fruits[0]; // pomme
+?&gt;
+</code></pre>
+
+            <h3>🔁 Exemple de boucle sur un tableau</h3>
+            <pre><code>&lt;?php
+foreach ($fruits as $fruit) {
+    echo $fruit . "&lt;br&gt;";
+}
+?&gt;
+</code></pre>
+
+            <div class="overview">
+                🧩 Les variables seront essentielles pour stocker les données saisies par un utilisateur (formulaire de recherche, etc.).
+            </div>
+
+            <p><a href="01-intro.php">⬅️ Étape précédente</a> | <a href="03-conditions-boucles.php">Étape suivante : Conditions, Boucles et Fonctions ➡️</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
